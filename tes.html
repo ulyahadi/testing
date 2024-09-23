@@ -1,0 +1,21 @@
+<html>
+    <body>
+      <h1>caa!</h1>
+      <img src="Stiker 3.gif" height="300" width="400">
+    
+      <h1>Lagi Gabut kahh?</h1>
+      <button id="btn_Iya" onclick="alert('Gabut Terus')">Iya</button>&nbsp;
+      <button id="btn_ga" onclick="ga(this)" style="position: absolute">
+        ga
+      </button>
+    </body>
+    <script>
+      function ga(id) {
+        var mau = document.getElementById("btn_Iya");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+      }
+    </script>
+  </html>
